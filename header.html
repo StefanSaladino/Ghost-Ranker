@@ -1,0 +1,44 @@
+<!-- header.html -->
+<div class="header">
+    <h1>Ghost Energy Drink Rankings</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#about">About</a>
+    </nav>
+  </div>
+  
+  <style>
+    .header {
+      background: #111;
+      color: #fff;
+      padding: 0.5rem 0;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      height: auto;
+    }
+    .header nav a {
+      color: #ffd700;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+    .header nav a:hover {
+      color: #d6ff02;
+    }
+  </style>
+  
+  <script>
+    // Dynamically load the header
+    async function loadHeader() {
+      const headerElement = document.createElement('div');
+      const response = await fetch('header.html');
+      const headerHTML = await response.text();
+      headerElement.innerHTML = headerHTML;
+      document.body.insertAdjacentElement('afterbegin', headerElement);
+    }
+    loadHeader();
+  </script>
+  

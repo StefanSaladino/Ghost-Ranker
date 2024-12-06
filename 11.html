@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghost Rankings - Citrus</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+    crossorigin="anonymous"
+  />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      color: #111;
+      background: linear-gradient(180deg, #f4f4f4 60%, #e6ffe6);
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .ranking-container {
+      max-width: 600px;
+      margin: 2rem auto;
+      text-align: center;
+      padding: 1rem;
+      
+    }
+
+    .can-image {
+      max-width: 200px;
+      margin-bottom: 1rem;
+    }
+
+    .description {
+        margin: 1em 0;
+        padding: 2em;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+
+    .ranking-number {
+      font-size: 5rem;
+      font-weight: bold;
+      color: blue;
+      text-align: left;
+    }
+
+    .flavor-name {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #111;
+    }
+
+    .rating {
+      font-size: 1.5rem;
+      color: #555;
+      margin: 1rem 0;
+    }
+
+    .back-btn {
+      background-color: #111;
+      border: none;
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+
+    .back-btn:hover {
+      background-color: #ffd700;
+      color: #111;
+    }
+
+    .score {
+        font-weight: bold;
+        color: rgba(255, 0, 0, 0.75);
+    }
+
+    .action-buttons {
+        display: flex;
+        justify-content: space-around;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ghost Rankings</h1>
+  </header>
+
+  <div class="ranking-container">
+    <p class="flavor-name">#11: Citrus</p>
+    <img src="./img/GHOST_ENERGY_CITRUS.png" alt="Ghost Energy Citrus" class="can-image" />
+    <p class="rating">Rating: <span class="score">5/10</span></p>
+    <p class="description">
+        Look, we had to start somewhere. Citrus is not a bad flavour. It beats
+        the hell out of Red Bull and Monster. But it's just... boring. It's a fine
+        flavour, but it cannot compete with Sprite in terms of a lemon lime flavoured
+        drink. I'm not mad at it, but I'm not reaching for it in a fridge with other
+        flavours of Ghost. 
+    </p>
+    <div class="action-buttons">
+        <a href="11.html" class="btn btn-primary" disabled>BACK</a>
+        <a href="10.html" class="btn btn-primary" disabled>NEXT</a>
+    </div>
+    <a href="index.html" class="back-btn">Back to home</a>
+  </div>
+</body>
+</html>
